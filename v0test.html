@@ -1,109 +1,134 @@
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/9ZULXnQQgTy
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh - Designer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Manrope', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 700;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: #6e8efb;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #6e8efb;
+            color: white;
+        }
+        .about {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .about-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+        .about-image {
+            flex: 1;
+        }
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" style="font-size: 1.5rem; font-weight: 700;">Rishabh</a>
+            <div>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-<div class="flex flex-col min-h-[100dvh]">
-  <header class="px-4 lg:px-6 h-14 flex items-center">
-    <a class="flex items-center justify-center" href="#">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="h-6 w-6"
-      >
-        <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
-        <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
-        <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
-        <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
-        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
-      </svg>
-      <span class="sr-only">Rishabh - Designer</span> </a>
-    <nav class="ml-auto flex gap-4 sm:gap-6">
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        Work
-      </a>
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        About
-      </a>
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        Contact
-      </a>
-    </nav>
-  </header>
-  <main class="flex-1">
-    <section class="w-full py-12 sm:py-24 md:py-32 lg:py-40 xl:py-48 bg-gradient-to-r from-primary to-primary-foreground">
-      <div class="container px-4 md:px-6">
-        <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-          <div class="flex flex-col justify-center space-y-4 text-primary-foreground">
-            <div class="space-y-2">
-              <h1 class="text-4xl font-bold tracking-tighter sm:text-6xl xl:text-7xl/none">
-                Elevate Your Brand with Exceptional Design
-              </h1>
-              <p class="max-w-[600px] text-primary-foreground/80 md:text-xl">
-                As a seasoned designer, I specialize in crafting visually stunning and user-centric designs that
-                captivate your audience and drive results.specialize in crafting visually
-              </p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Elevate Your Brand with Exceptional Design</h1>
+                <p>As a seasoned designer, I specialize in crafting visually stunning and user-centric designs that captivate your audience and drive results.</p>
+                <a href="#work" class="btn">Explore My Work</a>
             </div>
-            <a
-              href="#"
-              class="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            >
-              Explore My Work
-            </a>
-          </div>
-          <img
-            src="/placeholder.svg"
-            width="550"
-            height="550"
-            alt="Hero"
-            style=""
-            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-          />
-        </div>
-      </div>
-    </section>
-    <section class="w-full py-12 sm:py-24 md:py-32 lg:py-40 xl:py-48">
-      <div class="container px-4 md:px-6">
-        <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-          <div class="flex flex-col justify-center space-y-4">
-            <div class="space-y-2">
-              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Crafting Exceptional Designs
-              </h2>
-              <p class="max-w-[600px] text-muted-foreground md:text-xl">
-                With over a decade of experience in the design industry, I have honed my skills in creating visually
-                stunning and user-friendly designs that captivate audiences and drive results. From branding and web
-                design to print and packaging, I bring a unique blend of creativity and technical expertise to every
-                project.ience in the design industry, I have honed my skills in creating visually stunning and
-              </p>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2>Crafting Exceptional Designs</h2>
+                    <p>With over a decade of experience in the design industry, I have honed my skills in creating visually stunning and user-friendly designs that captivate audiences and drive results. From branding and web design to print and packaging, I bring a unique blend of creativity and technical expertise to every project.</p>
+                    <a href="#contact" class="btn" style="background-color: #6e8efb; color: white;">Contact Me</a>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/550/550" alt="About Rishabh" />
+                </div>
             </div>
-            <a
-              href="#"
-              class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            >
-              Contact Me
-            </a>
-          </div>
-          <img
-            src="/placeholder.svg"
-            width="550"
-            height="550"
-            alt="About"
-            style=""
-            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-          />
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-    <p class="text-xs text-muted-foreground">© 2024 Rishabh. All rights reserved.</p>
-  </footer>
-</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rishabh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
